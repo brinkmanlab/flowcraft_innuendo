@@ -135,6 +135,9 @@ Taxonomic Profiling
 - :doc:`components/kraken`: Performs taxonomic identification with kraken on FastQ files
   (minikrakenDB2017 as default database)
 
+- :doc:`components/kraken2`: Performs taxonomic identification with kraken2 on FastQ files
+  (minikraken2_v1_8GB as default database)
+
 - :doc:`components/midas_species`: Performs taxonomic identification on FastQ files at the
   species level with midas (requires database)
 
@@ -153,8 +156,17 @@ Typing
 - :doc:`components/patho_typing`: *In silico* pathogenic typing from raw
   illumina reads.
 
+- :doc:`components/seqsero2_reads`: Pipeline for Salmonella serotype determination
+  using SeqSero2 from raw reads.
+
+- :doc:`components/seqsero2_assembly`: Pipeline for Salmonella serotype determination
+  using SeqSero2 from genome assemblies.
+
 - :doc:`components/seq_typing`: Determines the type of a given sample from a set
   of reference sequences.
+
+- :doc:`components/stx_seqtyping`: Gets Escherichia coli stx subtypes from raw
+  reads via seq_typing.
 
 - :doc:`components/sistr`: Serovar predictions from whole-genome sequence assemblies
   by determination of antigen gene and cgMLST gene alleles.
