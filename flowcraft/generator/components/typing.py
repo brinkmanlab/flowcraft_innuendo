@@ -184,8 +184,7 @@ class Seqsero2Reads(Process):
                 "memory": "{ 1.GB * task.attempt }",
                 "container": "ummidock/seqsero2",
                 "version": "alpha-test-1",
-                "cache": "false",
-                "scratch": "true"
+                "scratch": "false"
             }
         }
 
@@ -213,8 +212,7 @@ class Seqsero2Assembly(Process):
                 "memory": "{ 1.GB * task.attempt }",
                 "container": "ummidock/seqsero2",
                 "version": "alpha-test-1",
-                "cache": "false",
-                "scratch": "true"
+                "scratch": "false"
             }
         }
 
@@ -255,6 +253,6 @@ class StxSeqtyping(Process):
                 "memory": "{ 1.GB * task.cpus * task.attempt }",
                 "container": "ummidock/seq_typing",
                 "version": "2.2-01",
-                "scratch": "true"
+                "scratch": "false"
             }
         }
