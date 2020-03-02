@@ -141,6 +141,42 @@ class Chewbbaca(Process):
         }
 
 
+class Mentalist(Process):
+    """MentaLiST process template interface
+
+    This process is set with:
+
+        - ``input_type``: fastq
+        - ``output_type``: txt
+        - ``ptype``: tabular
+    """
+
+    def __init__(self, **kwargs):
+
+        super().__init__(**kwargs)
+
+        self.input_type = "fastq"
+        self.output_type = "txt"
+
+        self.ignore_type = True
+
+        self.directives = {
+            "mentalist": {
+                "cpus": 4,
+                "container": "quay.io/biocontainers/mentalist",
+                "version": "latest",
+            },
+        }
+
+        self.params = {
+            "kmer_db": {
+                "default": "null",
+                "description":
+                    "Kmer database"
+            },
+        }
+
+
 class Metamlst(Process):
     """MetaMlst mapping process template interface
 
